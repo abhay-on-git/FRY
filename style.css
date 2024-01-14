@@ -248,7 +248,105 @@ h3{
 
 /* page2 code */
 .page2{
+    position: relative;
     width: 100%;
     min-height: 100vh;
-    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: burlywood; */
+}
+.page2 h1{
+    line-height: 9vw;
+    text-shadow: 0 1px 2px #000;
+}
+.page2 .first{
+    font-size: 12vw;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.page2 .second{
+    font-size: 6.5vw;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+.page2 .third{
+    font-size: 6vw;
+    font-weight: 600;
+    line-height: 5vw;
+    
+}
+.page2 a{
+    margin-top: 2.5vw;
+    padding: 8px 36px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius:20px;
+    transition: all 0.1s ease;
+}
+.page2 a:hover{
+    font-weight: 500;
+    transition: all 0.1s ease;
+}
+.page2 p{
+    width: 35%;
+    font-size: 14px;
+    /* margin-top: 7vw; */
+    align-self: flex-start;
+}
+.pg2-img-div{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    /* background-color: red; */
+}
+.pg2-img1{
+    width: 27%;
+    height: 60%;
+    background-color: yellow;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+}
+.pg2-img2{
+    width: 27%;
+    height: 80%;
+    background-color: yellow;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+}
+.pg2-img3{
+    width: 27%;
+    height: 100%;
+    background-color: yellow;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    overflow: hidden;
+}
+.page2 > i{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2.5vw;
+    animation: downArrow 1s infinite;
+}
+
+@keyframes downArrow {
+    0%{
+        bottom: 8%;
+    }
+    50%{
+        bottom: 5%;
+    }
+    100%{
+        bottom: 8%;
+    }
 }
