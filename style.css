@@ -249,6 +249,7 @@ h3{
 /* page2 code */
 .page2{
     position: relative;
+    padding-top: 2vw;
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -277,7 +278,7 @@ h3{
     
 }
 .page2 a{
-    margin-top: 2.5vw;
+    margin-top: 5vw;
     padding: 8px 36px;
     text-decoration: none;
     color: black;
@@ -332,7 +333,7 @@ h3{
 }
 .page2 > i{
     position: absolute;
-    bottom: 8%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 2.5vw;
@@ -341,12 +342,322 @@ h3{
 
 @keyframes downArrow {
     0%{
-        bottom: 8%;
-    }
-    50%{
         bottom: 5%;
     }
+    50%{
+        bottom: 2%;
+    }
     100%{
-        bottom: 8%;
+        bottom: 5%;
+    }
+}
+
+.page3{
+    padding-top: 2vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: burlywood; */
+}
+
+.pg3p1{
+    width: 5%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+.pg3p1in{
+    overflow: hidden;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: salmon; */
+    animation: sale 23s linear infinite;
+}
+.pg3p1in .sale{
+    transform: rotate(-90deg);
+}
+
+@keyframes sale {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
+    }
+}
+.pg3p2{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(73, 230, 21); */
+
+}
+.pg3p2a{
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.pg3p2a1{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg3p2a2{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg3p2b{
+    padding-bottom: 1vw;
+    padding-top: 0.5vw;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.pg3p2b1{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg3p2b2{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.imgcard{
+    position: relative;
+    width: 100%;
+    height: 85%;
+    overflow: hidden;
+    border-radius: 5px;
+    /* background-color: yellow; */
+    transition: all 0.3s ease;
+}
+.imgcard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+.imgcard:hover img{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.pricetag{
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    bottom: 0;
+    width: 85px;
+    height: 35px;
+    border-top-right-radius: 5px;
+    background-color: black;
+}
+.buynow-div{
+    width: 100%;
+    height: 15%;
+    padding: 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: salmon; */
+}
+.buynow-div a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    border: 1px solid black;
+    padding: 1px 20px;
+    border-radius: 5px;
+}
+.buynow-div a:hover{
+    font-weight: 500;
+}
+.pg3p3{
+    text-align: center;
+    padding-top: 1vw;
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(43, 156, 86); */
+}
+.pg3p3 h1{
+  font-size: 4.4vw;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+.pg3p3 h1 span{
+    font-weight: 500;
+  font-size: vw;
+}
+.pg3p3 p{
+  width: 98%;
+  font-size:14px;
+  margin: 6vw 0;
+}
+.pg3p3 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin: 6vw 0;
+    transition: all 0.3s ease;
+}
+.pg3p3 a:hover{
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+/* page4 code */
+.page4{
+    padding-top: 2vw;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* background-color: burlywood; */
+}
+.pg4p1{
+    text-align: center;
+    padding-top: 1vw;
+    width: 45%;
+    height: 100%;
+    /* background-color: rgb(44, 156, 86); */
+}
+.pg4p1 h1{
+  font-size: 4.4vw;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: center;
+}
+.pg4p1 h1 span{
+    font-weight: 500;
+  font-size: vw;
+}
+.pg4p1 p{
+  width: 98%;
+  font-size:14px;
+  margin: 6vw 0;
+}
+.pg4p1 a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    margin: 6vw 0;
+    transition: all 0.3s ease;
+}
+.pg4p1 a:hover{
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+}
+
+.pg4p2{
+    width: 50%;
+    height: 100%;
+    /* background-color: rgb(73, 230, 21); */
+
+}
+.pg4p2a{
+    padding-top: 1vw;
+    padding-bottom: 0.5vw;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.pg4p2a1{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg4p2a2{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg4p2b{
+    padding-bottom: 1vw;
+    padding-top: 0.5vw;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: aqua; */
+}
+.pg4p2b1{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg4p2b2{
+    width: 40%;
+    height: 95%;
+    border-radius: 5px;
+    overflow: hidden;
+    /* background-color: #853030; */
+}
+.pg4p3{
+    width: 5%;
+    height: 100%;
+    overflow: hidden;
+    /* background-color: red; */
+
+}
+.pg4p3in{
+    overflow: hidden;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: salmon; */
+    animation: sale 23s linear infinite;
+}
+.pg4p3in .sale{
+    transform: rotate(90deg);
+}
+
+@keyframes sale {
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
     }
 }
