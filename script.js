@@ -11,6 +11,7 @@ function swiper(){
       el: ".swiper-pagination",
       clickable: true,
     },
+    loop:true,
     // navigation: {
     //   nextEl: ".swiper-button-next",
     //   prevEl: ".swiper-button-prev",
@@ -18,12 +19,28 @@ function swiper(){
   });
 }
 swiper();
+
+function pg2(){
+  gsap.from(".page2 h1",{
+    y:145,
+    duration:1,
+    ease:"ease",
+    scrollTrigger:{
+      trigger:".page2",
+      start:"top top",
+      end:"top -1%",
+      // markers:true,
+    }
+  })
+}
+pg2()
+
 function pg5(){
   var tl = gsap.timeline();
   tl.to(".pg5-content h1",{
     y:-230,
     ease:Power2,
-    duration:2,
+    duration:1,
     scrollTrigger:{
       trigger:".pg5-content",
       start:"top top",
@@ -36,7 +53,7 @@ function pg5(){
   tl.to(".pg5-content",{
     height:"45vh",
     ease:"linear",
-    delay:3,
+    delay:2,
     scrollTrigger:{
       trigger:".pg5-content",
       start:"top top",

@@ -259,9 +259,15 @@ h3{
     align-items: center;
     /* background-color: burlywood; */
 }
+.page2 .h1{
+    width: 65%;
+    text-align: center;
+    overflow: hidden;
+    /* background-color: red; */
+}
 .page2 h1{
     line-height: 9vw;
-    text-shadow: 0 1px 2px #000;
+    text-shadow: 1px 1px 2px #000;
 }
 .page2 .first{
     font-size: 12vw;
