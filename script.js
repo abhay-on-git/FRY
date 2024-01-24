@@ -23,7 +23,6 @@ swiper();
 function pg2(){
   gsap.from(".page2 h1",{
     y:145,
-    duration:1,
     ease:"ease",
     scrollTrigger:{
       trigger:".page2",
