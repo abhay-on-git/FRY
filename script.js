@@ -50,7 +50,7 @@ function pg5(){
     }
   })
   tl.to(".pg5-content",{
-    height:"45vh",
+    height:"50vh",
     ease:"linear",
     delay:2,
     scrollTrigger:{
